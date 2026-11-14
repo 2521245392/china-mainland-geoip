@@ -1,0 +1,185 @@
+{
+  "formula": "(ip2region ISO=CN intersect china-operator-ip china) minus ip2region CN Hong Kong/Macao/Taiwan provinces; union unchanged original PRIVATE records",
+  "created_at_utc": "2026-11-14T19:56:58.845450+00:00",
+  "source_commits": {
+    "ip2region": "200f4cc7a6452843ef515a889c72d295281e8da3",
+    "operator": "e19b7fae553e3d414cd7d1b254b8ddf258ec9cff"
+  },
+  "sources": {
+    "mode": "latest",
+    "sources": {
+      "ip2region": {
+        "repository": "https://github.com/lionsoul2014/ip2region.git",
+        "requested_ref": "master",
+        "commit": "200f4cc7a6452843ef515a889c72d295281e8da3",
+        "commit_time": "2026-11-12T10:26:28+08:00",
+        "files": {
+          "data/ipv4_source.txt": {
+            "sha256": "81b9a4c7641eb1da98faf89cf6a34510dcefe2743d1b3c11b98060ec77ea47a7",
+            "bytes": 36682637
+          },
+          "data/ipv6_source.txt": {
+            "sha256": "022fcac8f293ae5f7deff1bdcd79d243ae3ee2f3c1cd17a953f2c9634f207bda",
+            "bytes": 76905878
+          },
+          "data/ip2region_v4.xdb": {
+            "sha256": "a12ad5aca1277d67e525efcda531a20cc0d654ff4f087150d45bc17fca4bc260",
+            "bytes": 11122742
+          },
+          "data/ip2region_v6.xdb": {
+            "sha256": "1f0be1ffbbc3e4eeef10f354e01355f22f57ec649a496a17fd602539f3d384c1",
+            "bytes": 37283761
+          }
+        }
+      },
+      "operator": {
+        "repository": "https://github.com/gaoyifan/china-operator-ip.git",
+        "requested_ref": "ip-lists",
+        "commit": "e19b7fae553e3d414cd7d1b254b8ddf258ec9cff",
+        "commit_time": "2026-11-14T09:31:23Z",
+        "files": {
+          "china.txt": {
+            "sha256": "4f4c6e7f26422df8d95ac5b6394f0aefafd5ad75f85a7c9e72fce54dff96491b",
+            "bytes": 96738
+          },
+          "china6.txt": {
+            "sha256": "f32be3fe1782cbfab6277236be9b80d80f14b58d7608997f41cda56f4fc63aeb",
+            "bytes": 57210
+          },
+          "chinanet.txt": {
+            "sha256": "cbc9bd379570eea55b54d12b88761539a548868c3a8c39aede25ddaab7e47da2",
+            "bytes": 40539
+          },
+          "chinanet6.txt": {
+            "sha256": "32ccc0d3282adae4c1839e1012166ed13e8a91c39376158db4d37f9009f2c0ec",
+            "bytes": 7878
+          },
+          "cmcc.txt": {
+            "sha256": "783874a27d1f88fd0b02244c20df343118c5f79f7422321e1f4d720151140dfb",
+            "bytes": 14918
+          },
+          "cmcc6.txt": {
+            "sha256": "f15f8e94f35c18d402b7cadd28667a2442533baa433a8032f4441b44844d765c",
+            "bytes": 2831
+          },
+          "unicom.txt": {
+            "sha256": "7a27e9807f7e53dbadb4996927bdde331dd1fe2db548dadacf5df3c2eea28cc3",
+            "bytes": 28474
+          },
+          "unicom6.txt": {
+            "sha256": "5a669f8705e6e6c2a5b85e9ef2114b94c0dea8dda945dae7e79aeddca400b1d9",
+            "bytes": 12546
+          }
+        }
+      }
+    }
+  },
+  "versions": {
+    "4": {
+      "CN_cidrs": 6506,
+      "CN_addresses": "340611431",
+      "PRIVATE_original_networks": 14,
+      "PRIVATE_addresses": "592708864",
+      "excluded_HK_MO_TW_addresses": "3176662",
+      "input_union_addresses": "343788093"
+    },
+    "6": {
+      "CN_cidrs": 2954,
+      "CN_addresses": "5422300809440758909025973765668864",
+      "PRIVATE_original_networks": 3,
+      "PRIVATE_addresses": "4319990986300976586937372945911119872",
+      "excluded_HK_MO_TW_addresses": "301167600200843164076512116736",
+      "input_union_addresses": "5422601977040959752190050277785600",
+      "CN_64_equivalent": "293943515873279"
+    }
+  },
+  "total_networks": 9477,
+  "CN_networks": 9460,
+  "PRIVATE_networks": 17,
+  "metadata": {
+    "original": {
+      "Description": {
+        "en": "Customized GeoLite2 Country database"
+      },
+      "DatabaseType": "GeoLite2-Country",
+      "Languages": [],
+      "BinaryFormatMajorVersion": 2,
+      "BinaryFormatMinorVersion": 0,
+      "BuildEpoch": 1794465850,
+      "IPVersion": 6,
+      "NodeCount": 32668,
+      "RecordSize": 28
+    },
+    "output": {
+      "Description": {
+        "en": "Customized GeoLite2 Country database"
+      },
+      "DatabaseType": "GeoLite2-Country",
+      "Languages": [],
+      "BinaryFormatMajorVersion": 2,
+      "BinaryFormatMinorVersion": 0,
+      "BuildEpoch": 1794465850,
+      "IPVersion": 6,
+      "NodeCount": 35372,
+      "RecordSize": 28
+    },
+    "all_fields_except_structural_NodeCount_preserved": true
+  },
+  "sampling": {
+    "seed": 2026111501,
+    "groups": {
+      "IPv4:CN:北京:chinanet": 10,
+      "IPv4:CN:北京:cmcc": 10,
+      "IPv4:CN:北京:unicom": 10,
+      "IPv4:CN:上海:chinanet": 10,
+      "IPv4:CN:上海:cmcc": 10,
+      "IPv4:CN:上海:unicom": 10,
+      "IPv4:CN:广州:chinanet": 10,
+      "IPv4:CN:广州:cmcc": 10,
+      "IPv4:CN:广州:unicom": 10,
+      "IPv6:CN:北京:chinanet": 10,
+      "IPv6:CN:北京:cmcc": 10,
+      "IPv6:CN:北京:unicom": 10,
+      "IPv6:CN:上海:chinanet": 10,
+      "IPv6:CN:上海:cmcc": 10,
+      "IPv6:CN:上海:unicom": 10,
+      "IPv6:CN:广州:chinanet": 10,
+      "IPv6:CN:广州:cmcc": 10,
+      "IPv6:CN:广州:unicom": 10,
+      "IPv4:NONE:HK:": 10,
+      "IPv4:NONE:MO:": 10,
+      "IPv4:NONE:TW:": 10,
+      "IPv4:NONE:US:": 10,
+      "IPv6:NONE:HK:": 10,
+      "IPv6:NONE:MO:": 10,
+      "IPv6:NONE:TW:": 10,
+      "IPv6:NONE:US:": 10
+    },
+    "unavailable_groups": [],
+    "total_queries": 311
+  },
+  "validation": {
+    "structural_verify": "PASS",
+    "exact_coverage_and_payloads": "PASS",
+    "full_HK_MO_TW_exclusion": "PASS",
+    "all_CN_in_both_sources": "PASS",
+    "original_PRIVATE_unchanged": "PASS",
+    "semantic_metadata_unchanged": "PASS",
+    "samples": "PASS",
+    "pinned_reference_sha256": "PASS"
+  },
+  "mmdb": {
+    "bytes": 247886,
+    "sha256": "9c7f2f5184700f62c50917a113666eb0786785bb884458763768d3d442a6a6d6"
+  },
+  "limitations": "Data-policy membership is not verified physical geography. Operator china includes a registration fallback. Cities/ISPs are source labels, not live measurement.",
+  "independent_validation": {
+    "reader": "Python maxminddb/libmaxminddb",
+    "full_set_formula": "PASS",
+    "HK_MO_TW_overlap": "NONE",
+    "PRIVATE_and_schema": "PASS",
+    "semantic_metadata": "PASS",
+    "samples": "PASS",
+    "total_lookups": 28582
+  }
+}

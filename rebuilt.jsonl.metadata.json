@@ -1,0 +1,13 @@
+{
+  "Description": {
+    "en": "Customized GeoLite2 Country database"
+  },
+  "DatabaseType": "GeoLite2-Country",
+  "Languages": [],
+  "BinaryFormatMajorVersion": 2,
+  "BinaryFormatMinorVersion": 0,
+  "BuildEpoch": 1794465850,
+  "IPVersion": 6,
+  "NodeCount": 35372,
+  "RecordSize": 28
+}
