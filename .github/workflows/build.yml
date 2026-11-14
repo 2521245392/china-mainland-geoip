@@ -1,0 +1,111 @@
+name: Build mainland Country.mmdb
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_mode:
+        description: Upstream selection (pinned reproduces the initial verified database)
+        type: choice
+        options: [latest, pinned]
+        default: latest
+  schedule:
+    - cron: '30 10 * * *'
+  push:
+    branches: [main]
+    paths-ignore: ['*.md', 'LICENSE', '.gitignore']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mainland-geoip-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: tools/mmdb/go.mod
+          cache-dependency-path: tools/mmdb/go.sum
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - name: Install independent MMDB reader
+        run: python -m pip install --requirement requirements.txt
+      - name: Test exact interval operations
+        run: python -m unittest discover -s tests -v
+      - name: Resolve immutable upstream snapshots
+        run: python scripts/fetch_sources.py --mode "$SOURCE_MODE"
+        env:
+          SOURCE_MODE: ${{ inputs.source_mode || 'latest' }}
+      - name: Build MMDB writer and reader
+        working-directory: tools/mmdb
+        run: |
+          mkdir -p ../../bin
+          go build -trimpath -o ../../bin/mmdb .
+      - name: Generate mainland CN and original PRIVATE records
+        run: python scripts/build.py
+      - name: Independently validate complete coverage and sample lookups
+        run: |
+          python scripts/verify.py
+          cd dist
+          sha256sum --check SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mainland-geoip
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30
+
+  publish:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: mainland-geoip
+          path: dist
+      - name: Verify transferred artifacts
+        run: cd dist && sha256sum --check SHA256SUMS
+      - name: Publish assets to release branch
+        run: |
+          gh auth setup-git
+          release_dir=$(mktemp -d)
+          git -C "$release_dir" init --initial-branch=release
+          git -C "$release_dir" remote add origin "https://github.com/$GH_REPO.git"
+          if [ -n "$(git -C "$release_dir" ls-remote --heads origin release)" ]; then
+            git -C "$release_dir" fetch --depth=1 origin release
+            git -C "$release_dir" checkout -B release FETCH_HEAD
+          fi
+          cp -a dist/. "$release_dir/"
+          git -C "$release_dir" config user.name 'github-actions[bot]'
+          git -C "$release_dir" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$release_dir" add --all
+          git -C "$release_dir" commit -m "Build mainland GeoIP ${GITHUB_RUN_ID}" || test -z "$(git -C "$release_dir" status --porcelain)"
+          git -C "$release_dir" push origin HEAD:release
+      - name: Publish stable latest release
+        run: |
+          title="Mainland GeoIP $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')"
+          if gh release view latest >/dev/null 2>&1; then
+            gh api --method PATCH "repos/$GH_REPO/git/refs/tags/latest" -f sha="$GITHUB_SHA" -F force=true
+            gh release upload latest dist/* --clobber
+            gh release edit latest --title "$title" --notes-file dist/README.md --latest
+          else
+            gh release create latest dist/* --target "$GITHUB_SHA" --title "$title" --notes-file dist/README.md --latest
+          fi

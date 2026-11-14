@@ -1,0 +1,13 @@
+{
+  "ip2region": "200f4cc7a6452843ef515a889c72d295281e8da3",
+  "china_operator_ip_lists": "e19b7fae553e3d414cd7d1b254b8ddf258ec9cff",
+  "reference_mmdb_sha256": "9c7f2f5184700f62c50917a113666eb0786785bb884458763768d3d442a6a6d6",
+  "reference_CN_cidrs": {
+    "4": 6506,
+    "6": 2954
+  },
+  "reference_CN_addresses": {
+    "4": "340611431",
+    "6": "5422300809440758909025973765668864"
+  }
+}

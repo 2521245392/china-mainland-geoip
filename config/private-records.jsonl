@@ -1,0 +1,17 @@
+{"cidr": "0.0.0.0/8", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "10.0.0.0/8", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "100.64.0.0/10", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "127.0.0.0/8", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "169.254.0.0/16", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "172.16.0.0/12", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "192.0.0.0/24", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "192.0.2.0/24", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "192.88.99.0/24", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "192.168.0.0/16", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "198.18.0.0/15", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "198.51.100.0/24", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "203.0.113.0/24", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "224.0.0.0/3", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "fc00::/7", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "fe80::/10", "record": {"country": {"iso_code": "PRIVATE"}}}
+{"cidr": "ff00::/8", "record": {"country": {"iso_code": "PRIVATE"}}}
