@@ -1,9 +1,9 @@
 {
   "formula": "(ip2region ISO=CN intersect china-operator-ip china) minus ip2region CN Hong Kong/Macao/Taiwan provinces; union unchanged original PRIVATE records",
-  "created_at_utc": "2026-11-14T19:56:58.845450+00:00",
+  "created_at_utc": "2026-11-15T17:22:04.075916+00:00",
   "source_commits": {
     "ip2region": "200f4cc7a6452843ef515a889c72d295281e8da3",
-    "operator": "e19b7fae553e3d414cd7d1b254b8ddf258ec9cff"
+    "operator": "7d270558760e5d0e615df2196a2db2b0abadb44d"
   },
   "sources": {
     "mode": "latest",
@@ -35,20 +35,20 @@
       "operator": {
         "repository": "https://github.com/gaoyifan/china-operator-ip.git",
         "requested_ref": "ip-lists",
-        "commit": "e19b7fae553e3d414cd7d1b254b8ddf258ec9cff",
-        "commit_time": "2026-11-14T09:31:23Z",
+        "commit": "7d270558760e5d0e615df2196a2db2b0abadb44d",
+        "commit_time": "2026-11-15T10:03:10Z",
         "files": {
           "china.txt": {
             "sha256": "4f4c6e7f26422df8d95ac5b6394f0aefafd5ad75f85a7c9e72fce54dff96491b",
             "bytes": 96738
           },
           "china6.txt": {
-            "sha256": "f32be3fe1782cbfab6277236be9b80d80f14b58d7608997f41cda56f4fc63aeb",
-            "bytes": 57210
+            "sha256": "f112994db86c3081ed6f615e969b71a3f23bf0f9d7837f5076690bbf26002089",
+            "bytes": 57248
           },
           "chinanet.txt": {
-            "sha256": "cbc9bd379570eea55b54d12b88761539a548868c3a8c39aede25ddaab7e47da2",
-            "bytes": 40539
+            "sha256": "2aa1ee1a16c56920f5827d7687b585bc7e9f881cc97a9825e3fa6902eede3679",
+            "bytes": 40555
           },
           "chinanet6.txt": {
             "sha256": "32ccc0d3282adae4c1839e1012166ed13e8a91c39376158db4d37f9009f2c0ec",
@@ -63,8 +63,8 @@
             "bytes": 2831
           },
           "unicom.txt": {
-            "sha256": "7a27e9807f7e53dbadb4996927bdde331dd1fe2db548dadacf5df3c2eea28cc3",
-            "bytes": 28474
+            "sha256": "5ae5ea3d64938a510e92b6dbe6a17240d795cd29af4e0fd9f581006828717fa6",
+            "bytes": 28490
           },
           "unicom6.txt": {
             "sha256": "5a669f8705e6e6c2a5b85e9ef2114b94c0dea8dda945dae7e79aeddca400b1d9",
@@ -84,17 +84,17 @@
       "input_union_addresses": "343788093"
     },
     "6": {
-      "CN_cidrs": 2954,
-      "CN_addresses": "5422300809440758909025973765668864",
+      "CN_cidrs": 2956,
+      "CN_addresses": "5422300808231833089411344590962688",
       "PRIVATE_original_networks": 3,
       "PRIVATE_addresses": "4319990986300976586937372945911119872",
       "excluded_HK_MO_TW_addresses": "301167600200843164076512116736",
-      "input_union_addresses": "5422601977040959752190050277785600",
-      "CN_64_equivalent": "293943515873279"
+      "input_union_addresses": "5422601975832033932575421103079424",
+      "CN_64_equivalent": "293943515807743"
     }
   },
-  "total_networks": 9477,
-  "CN_networks": 9460,
+  "total_networks": 9479,
+  "CN_networks": 9462,
   "PRIVATE_networks": 17,
   "metadata": {
     "original": {
@@ -120,7 +120,7 @@
       "BinaryFormatMinorVersion": 0,
       "BuildEpoch": 1794465850,
       "IPVersion": 6,
-      "NodeCount": 35372,
+      "NodeCount": 35375,
       "RecordSize": 28
     },
     "all_fields_except_structural_NodeCount_preserved": true
@@ -165,12 +165,11 @@
     "all_CN_in_both_sources": "PASS",
     "original_PRIVATE_unchanged": "PASS",
     "semantic_metadata_unchanged": "PASS",
-    "samples": "PASS",
-    "pinned_reference_sha256": "PASS"
+    "samples": "PASS"
   },
   "mmdb": {
-    "bytes": 247886,
-    "sha256": "9c7f2f5184700f62c50917a113666eb0786785bb884458763768d3d442a6a6d6"
+    "bytes": 247907,
+    "sha256": "7e529045d14e8db956d23cc0ee162e6e383a02e645d3852253ce974188143f00"
   },
   "limitations": "Data-policy membership is not verified physical geography. Operator china includes a registration fallback. Cities/ISPs are source labels, not live measurement.",
   "independent_validation": {
@@ -180,6 +179,6 @@
     "PRIVATE_and_schema": "PASS",
     "semantic_metadata": "PASS",
     "samples": "PASS",
-    "total_lookups": 28582
+    "total_lookups": 28588
   }
 }
