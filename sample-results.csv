@@ -1,7 +1,7 @@
 ﻿ip,group,expected,actual,result,ip2region_region,operator_list
 202.97.32.60,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 202.97.56.93,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
-202.97.81.236,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
+202.97.81.188,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 103.231.69.59,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 202.97.90.39,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 199.244.144.124,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
