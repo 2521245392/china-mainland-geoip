@@ -28,36 +28,36 @@
     "operator": {
       "repository": "https://github.com/gaoyifan/china-operator-ip.git",
       "requested_ref": "ip-lists",
-      "commit": "6b5c86fb8e286a223b487120c69a3dff0bb5a13a",
-      "commit_time": "2026-11-18T10:51:04Z",
+      "commit": "be3de75a9698c50193c35c1215509e89d5d5cf6f",
+      "commit_time": "2026-11-19T10:51:40Z",
       "files": {
         "china.txt": {
-          "sha256": "0892252c80c8f651a9250856b9bcbf87383cdf28c527656fbb62526f46878079",
-          "bytes": 96772
+          "sha256": "e2c280f8adfd3a5f16e0cb5e518193b7f4487f010b5e92ac7b6513317904bb8f",
+          "bytes": 96865
         },
         "china6.txt": {
-          "sha256": "9770e48ce8cab2f265a08073e81da760757db7bfe58cbf12353b089bbf765de7",
-          "bytes": 57329
+          "sha256": "225a126c2b779d3962861558b6b1435d667da189b036bbdfb31f544974356c59",
+          "bytes": 57369
         },
         "chinanet.txt": {
-          "sha256": "10ad94b73af367e652199b5523bbd6cd3fd5e90a0a93abf343f4a5fc20ebc9bb",
-          "bytes": 44704
+          "sha256": "b522175c0a5bce49ccd7be37749262d4731a1f039d15d1f4ae27bf7e0733c6b5",
+          "bytes": 44688
         },
         "chinanet6.txt": {
           "sha256": "32ccc0d3282adae4c1839e1012166ed13e8a91c39376158db4d37f9009f2c0ec",
           "bytes": 7878
         },
         "cmcc.txt": {
-          "sha256": "aff49e91afbdd02f4103d405da8c60daaad3156e8c6b38afecea1e8223ec6e6c",
-          "bytes": 16339
+          "sha256": "17057766d00219e25909c4b2ef44e5cdeb7e2e7899113ce259f5846546c10439",
+          "bytes": 16223
         },
         "cmcc6.txt": {
           "sha256": "f15f8e94f35c18d402b7cadd28667a2442533baa433a8032f4441b44844d765c",
           "bytes": 2831
         },
         "unicom.txt": {
-          "sha256": "fcebe4873eab2b580293d53806ae49b93feda96643ac780111845ba8d295a31c",
-          "bytes": 27307
+          "sha256": "b6a002d7537656a6935b47dba82b61049cfc642648d05e1c46e02863b5f426a1",
+          "bytes": 27093
         },
         "unicom6.txt": {
           "sha256": "5a669f8705e6e6c2a5b85e9ef2114b94c0dea8dda945dae7e79aeddca400b1d9",
