@@ -298,7 +298,6 @@
 {"cidr": "42.240.224.0/20", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "42.240.240.0/21", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "42.240.248.0/23", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "42.240.250.0/24", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "42.242.0.0/15", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "42.244.0.0/15", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "42.246.0.0/16", "record": {"country": {"iso_code": "CN"}}}
@@ -8992,7 +8991,6 @@
 {"cidr": "2406:bc80::/32", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2406:bd40::/32", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2406:bd80::/32", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "2406:bdc0::/32", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2406:be80::/32", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2406:bf80::/32", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2406:c080::/32", "record": {"country": {"iso_code": "CN"}}}
@@ -9230,6 +9228,7 @@
 {"cidr": "2408:4008::/29", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2408:4010::/30", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2408:4014::/31", "record": {"country": {"iso_code": "CN"}}}
+{"cidr": "2408:4016:1::/48", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2408:4016:2::/47", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2408:4016:4::/46", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "2408:4016:8::/45", "record": {"country": {"iso_code": "CN"}}}
