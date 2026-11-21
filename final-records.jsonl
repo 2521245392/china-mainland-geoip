@@ -1689,10 +1689,7 @@
 {"cidr": "103.72.234.0/23", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.72.236.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.72.240.0/20", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.73.0.0/21", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.73.10.0/23", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.73.12.0/22", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.73.16.0/20", "record": {"country": {"iso_code": "CN"}}}
+{"cidr": "103.73.0.0/19", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.73.48.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.73.116.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.73.120.0/22", "record": {"country": {"iso_code": "CN"}}}
@@ -1987,7 +1984,6 @@
 {"cidr": "103.109.20.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.109.48.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.109.88.0/22", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.109.107.0/24", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.109.248.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.110.92.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.110.116.0/23", "record": {"country": {"iso_code": "CN"}}}
