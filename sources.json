@@ -28,36 +28,36 @@
     "operator": {
       "repository": "https://github.com/gaoyifan/china-operator-ip.git",
       "requested_ref": "ip-lists",
-      "commit": "52525c4efacf9a708232866e4f9cafc8212bad8d",
-      "commit_time": "2026-11-22T10:23:07Z",
+      "commit": "a1214434b6211eca49508ef42989daaa83fa5436",
+      "commit_time": "2026-11-23T11:23:11Z",
       "files": {
         "china.txt": {
-          "sha256": "702382804b45324f2e7c4cee0e60d5ca60cbe667525df75b49afbd8419ab4669",
-          "bytes": 96829
+          "sha256": "c6c8512853a6400a535a66c814c91a5819ad6389377f54a7688ffd2557ea2e2e",
+          "bytes": 97379
         },
         "china6.txt": {
-          "sha256": "2f3ba5853537ee79f48af416a5f18f90ee98a9809bc57c712b23ced01cbf983f",
-          "bytes": 57391
+          "sha256": "149c1227b848764228dfeaa1ab7b31e9d582fde39f70a55ce9dff5aa61a5b3ac",
+          "bytes": 57370
         },
         "chinanet.txt": {
-          "sha256": "6f7f2bc10d5caa59ba98d34790aac0e5af15105c6513010a085c9a8f9f972b63",
-          "bytes": 44237
+          "sha256": "8a20134db0c58516f9298613e25c1b12e297cc2d15a4f0bc4da5a67829df6acf",
+          "bytes": 44111
         },
         "chinanet6.txt": {
-          "sha256": "0024301a6016f7883c64bfcdba482a6838608fc6528d379b8489686e41116442",
-          "bytes": 7859
+          "sha256": "ed30477fba050f0ffd44f989d24f9a09bc1e4d153da9b1fce64b75c5d61ea4da",
+          "bytes": 7821
         },
         "cmcc.txt": {
-          "sha256": "1b92913e33cc5e09f6940463067f541e375fb27d82ad2eb37d2fdf600a960c2d",
-          "bytes": 16319
+          "sha256": "f16c52c0b261d6254b8cd4f6825d42e71c76d6683b0f1f8d5cb41a142ceb2ca8",
+          "bytes": 16351
         },
         "cmcc6.txt": {
           "sha256": "f15f8e94f35c18d402b7cadd28667a2442533baa433a8032f4441b44844d765c",
           "bytes": 2831
         },
         "unicom.txt": {
-          "sha256": "3cfe2d1fe038f7a0181f9ea22141e9bb1927b57564c9ebf49227cdd88cc767ca",
-          "bytes": 27085
+          "sha256": "8e19b7d932a5d16b4f4f4dbd991bef5847ad804093cedde6db1c6684c325f0c7",
+          "bytes": 27168
         },
         "unicom6.txt": {
           "sha256": "077224ce5a70d456a96295b71c4e226afc45a4e91d1979edced7baa73b63ee45",

@@ -1,9 +1,9 @@
 {
   "formula": "(ip2region ISO=CN intersect china-operator-ip china) minus ip2region CN Hong Kong/Macao/Taiwan provinces; union unchanged original PRIVATE records",
-  "created_at_utc": "2026-11-22T18:00:08.485873+00:00",
+  "created_at_utc": "2026-11-23T22:12:02.326431+00:00",
   "source_commits": {
     "ip2region": "cba49ef11b4051bc25334a3c5712715d636de90d",
-    "operator": "52525c4efacf9a708232866e4f9cafc8212bad8d"
+    "operator": "a1214434b6211eca49508ef42989daaa83fa5436"
   },
   "sources": {
     "mode": "latest",
@@ -35,36 +35,36 @@
       "operator": {
         "repository": "https://github.com/gaoyifan/china-operator-ip.git",
         "requested_ref": "ip-lists",
-        "commit": "52525c4efacf9a708232866e4f9cafc8212bad8d",
-        "commit_time": "2026-11-22T10:23:07Z",
+        "commit": "a1214434b6211eca49508ef42989daaa83fa5436",
+        "commit_time": "2026-11-23T11:23:11Z",
         "files": {
           "china.txt": {
-            "sha256": "702382804b45324f2e7c4cee0e60d5ca60cbe667525df75b49afbd8419ab4669",
-            "bytes": 96829
+            "sha256": "c6c8512853a6400a535a66c814c91a5819ad6389377f54a7688ffd2557ea2e2e",
+            "bytes": 97379
           },
           "china6.txt": {
-            "sha256": "2f3ba5853537ee79f48af416a5f18f90ee98a9809bc57c712b23ced01cbf983f",
-            "bytes": 57391
+            "sha256": "149c1227b848764228dfeaa1ab7b31e9d582fde39f70a55ce9dff5aa61a5b3ac",
+            "bytes": 57370
           },
           "chinanet.txt": {
-            "sha256": "6f7f2bc10d5caa59ba98d34790aac0e5af15105c6513010a085c9a8f9f972b63",
-            "bytes": 44237
+            "sha256": "8a20134db0c58516f9298613e25c1b12e297cc2d15a4f0bc4da5a67829df6acf",
+            "bytes": 44111
           },
           "chinanet6.txt": {
-            "sha256": "0024301a6016f7883c64bfcdba482a6838608fc6528d379b8489686e41116442",
-            "bytes": 7859
+            "sha256": "ed30477fba050f0ffd44f989d24f9a09bc1e4d153da9b1fce64b75c5d61ea4da",
+            "bytes": 7821
           },
           "cmcc.txt": {
-            "sha256": "1b92913e33cc5e09f6940463067f541e375fb27d82ad2eb37d2fdf600a960c2d",
-            "bytes": 16319
+            "sha256": "f16c52c0b261d6254b8cd4f6825d42e71c76d6683b0f1f8d5cb41a142ceb2ca8",
+            "bytes": 16351
           },
           "cmcc6.txt": {
             "sha256": "f15f8e94f35c18d402b7cadd28667a2442533baa433a8032f4441b44844d765c",
             "bytes": 2831
           },
           "unicom.txt": {
-            "sha256": "3cfe2d1fe038f7a0181f9ea22141e9bb1927b57564c9ebf49227cdd88cc767ca",
-            "bytes": 27085
+            "sha256": "8e19b7d932a5d16b4f4f4dbd991bef5847ad804093cedde6db1c6684c325f0c7",
+            "bytes": 27168
           },
           "unicom6.txt": {
             "sha256": "077224ce5a70d456a96295b71c4e226afc45a4e91d1979edced7baa73b63ee45",
@@ -76,25 +76,25 @@
   },
   "versions": {
     "4": {
-      "CN_cidrs": 6506,
-      "CN_addresses": "340602727",
+      "CN_cidrs": 6539,
+      "CN_addresses": "340599399",
       "PRIVATE_original_networks": 14,
       "PRIVATE_addresses": "592708864",
-      "excluded_HK_MO_TW_addresses": "3176662",
-      "input_union_addresses": "343779389"
+      "excluded_HK_MO_TW_addresses": "3176406",
+      "input_union_addresses": "343775805"
     },
     "6": {
       "CN_cidrs": 2954,
       "CN_addresses": "5422221580069318825073751047012352",
       "PRIVATE_original_networks": 3,
       "PRIVATE_addresses": "4319990986300976586937372945911119872",
-      "excluded_HK_MO_TW_addresses": "301166391275023549447337410560",
-      "input_union_addresses": "5422522746460593848623198384422912",
+      "excluded_HK_MO_TW_addresses": "301167600200843164076512116736",
+      "input_union_addresses": "5422522747669519668237827559129088",
       "CN_64_equivalent": "293939220840447"
     }
   },
-  "total_networks": 9477,
-  "CN_networks": 9460,
+  "total_networks": 9510,
+  "CN_networks": 9493,
   "PRIVATE_networks": 17,
   "metadata": {
     "original": {
@@ -120,7 +120,7 @@
       "BinaryFormatMinorVersion": 0,
       "BuildEpoch": 1794465850,
       "IPVersion": 6,
-      "NodeCount": 35370,
+      "NodeCount": 35435,
       "RecordSize": 28
     },
     "all_fields_except_structural_NodeCount_preserved": true
@@ -168,8 +168,8 @@
     "samples": "PASS"
   },
   "mmdb": {
-    "bytes": 247872,
-    "sha256": "19115df174d7adb0376037ff40f2a57faa2793cc2622c480f81afb6855712b24"
+    "bytes": 248327,
+    "sha256": "7c8a05b7522f5e311cc65c14b7e4e4c5446f36cd417677748719855604ab4cee"
   },
   "limitations": "Data-policy membership is not verified physical geography. Operator china includes a registration fallback. Cities/ISPs are source labels, not live measurement.",
   "independent_validation": {
@@ -179,6 +179,6 @@
     "PRIVATE_and_schema": "PASS",
     "semantic_metadata": "PASS",
     "samples": "PASS",
-    "total_lookups": 28582
+    "total_lookups": 28681
   }
 }
