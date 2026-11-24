@@ -4,20 +4,20 @@
     "ip2region": {
       "repository": "https://github.com/lionsoul2014/ip2region.git",
       "requested_ref": "master",
-      "commit": "cba49ef11b4051bc25334a3c5712715d636de90d",
-      "commit_time": "2026-11-21T20:57:02+08:00",
+      "commit": "f1781b7f9b7a17c96246433d83804404f0a22120",
+      "commit_time": "2026-11-24T14:16:57+08:00",
       "files": {
         "data/ipv4_source.txt": {
-          "sha256": "b8e2488f2331d3672a906547caeae26b230c14397b2a65a6fb19613e490d0c84",
-          "bytes": 36687539
+          "sha256": "67fa8390b65e51b8de4da9d64012f7270feefc0c81dd008083a95352b1ec02f5",
+          "bytes": 36687568
         },
         "data/ipv6_source.txt": {
           "sha256": "022fcac8f293ae5f7deff1bdcd79d243ae3ee2f3c1cd17a953f2c9634f207bda",
           "bytes": 76905878
         },
         "data/ip2region_v4.xdb": {
-          "sha256": "4ed5d3398f0a72346a6cec780c57601bb6977fa4f29e9682cd60a66e3478c542",
-          "bytes": 11123810
+          "sha256": "a29fb3e8b204dfdf45b9bc082e12845b5eaac18cd467849d2888baa9fde383c8",
+          "bytes": 11123858
         },
         "data/ip2region_v6.xdb": {
           "sha256": "1f0be1ffbbc3e4eeef10f354e01355f22f57ec649a496a17fd602539f3d384c1",
@@ -28,40 +28,40 @@
     "operator": {
       "repository": "https://github.com/gaoyifan/china-operator-ip.git",
       "requested_ref": "ip-lists",
-      "commit": "a1214434b6211eca49508ef42989daaa83fa5436",
-      "commit_time": "2026-11-23T11:23:11Z",
+      "commit": "9401dabc1837c0609857cb1662c3d5e457fe73a6",
+      "commit_time": "2026-11-24T13:02:54Z",
       "files": {
         "china.txt": {
-          "sha256": "c6c8512853a6400a535a66c814c91a5819ad6389377f54a7688ffd2557ea2e2e",
-          "bytes": 97379
+          "sha256": "240b2625f5bb65fcd54367e588694254321794f3807ac4e6f64666b539eeac70",
+          "bytes": 97129
         },
         "china6.txt": {
-          "sha256": "149c1227b848764228dfeaa1ab7b31e9d582fde39f70a55ce9dff5aa61a5b3ac",
-          "bytes": 57370
+          "sha256": "be62696153ff5c206ccb2e5fc26ded9dd8a4ec773b42254c2d3ad9b613713dff",
+          "bytes": 57385
         },
         "chinanet.txt": {
-          "sha256": "8a20134db0c58516f9298613e25c1b12e297cc2d15a4f0bc4da5a67829df6acf",
-          "bytes": 44111
+          "sha256": "0987784bce21f29ce7dffe4b75cc756c8f7c1f8980888f3be2a390c1c7181e19",
+          "bytes": 43992
         },
         "chinanet6.txt": {
           "sha256": "ed30477fba050f0ffd44f989d24f9a09bc1e4d153da9b1fce64b75c5d61ea4da",
           "bytes": 7821
         },
         "cmcc.txt": {
-          "sha256": "f16c52c0b261d6254b8cd4f6825d42e71c76d6683b0f1f8d5cb41a142ceb2ca8",
-          "bytes": 16351
+          "sha256": "5fe020176fc8a87eb94aa654b0096ebf4e91c4a9de9cfb29bb57c3454d06a819",
+          "bytes": 16923
         },
         "cmcc6.txt": {
-          "sha256": "f15f8e94f35c18d402b7cadd28667a2442533baa433a8032f4441b44844d765c",
-          "bytes": 2831
+          "sha256": "a631abfb702dfc4fa138e5a8e8a504c49d67795119e18b87257196149caf06b9",
+          "bytes": 2812
         },
         "unicom.txt": {
-          "sha256": "8e19b7d932a5d16b4f4f4dbd991bef5847ad804093cedde6db1c6684c325f0c7",
-          "bytes": 27168
+          "sha256": "9a51a3919fa8b7f41db7d56dc2fda26d99b249c450f5fdae19bb3f5da96c1888",
+          "bytes": 27937
         },
         "unicom6.txt": {
-          "sha256": "077224ce5a70d456a96295b71c4e226afc45a4e91d1979edced7baa73b63ee45",
-          "bytes": 12565
+          "sha256": "5a669f8705e6e6c2a5b85e9ef2114b94c0dea8dda945dae7e79aeddca400b1d9",
+          "bytes": 12546
         }
       }
     }
