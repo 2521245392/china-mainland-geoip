@@ -28,20 +28,20 @@
     "operator": {
       "repository": "https://github.com/gaoyifan/china-operator-ip.git",
       "requested_ref": "ip-lists",
-      "commit": "31f093f8325fefd9d7c6dbe68ac80008b2059d03",
-      "commit_time": "2026-11-26T11:35:49Z",
+      "commit": "15d8e5e564149dd77e79b24a3d7b9ff596d94183",
+      "commit_time": "2026-11-27T11:31:12Z",
       "files": {
         "china.txt": {
-          "sha256": "b557d2afddfb8419d5949d92110f461ff53f217c297c5173a0d1394a8287f462",
-          "bytes": 97032
+          "sha256": "9b1014d886fe8d054fcd1231fd123452396367c134374aff300b740f73bdbd0a",
+          "bytes": 97034
         },
         "china6.txt": {
-          "sha256": "b28fc7982bcb55dd495a1de391d7b2051aee24e1de8ae0b444fb69d6182a0d70",
-          "bytes": 57442
+          "sha256": "47cdd12e614031901131cf8270b987337d332f35630573a92aedea13826583df",
+          "bytes": 57423
         },
         "chinanet.txt": {
-          "sha256": "b060d59112083130467dce10837ee95239f6cae4882fb1f10f6198e1f9ef5730",
-          "bytes": 43990
+          "sha256": "6eca7b1dc2d48374a3ab402b4d87c60bca3344eb43eb29910956c9221d5011ba",
+          "bytes": 43973
         },
         "chinanet6.txt": {
           "sha256": "b76ce9339e821846718f0e3dce20f8ac4e529e29021ed0634bb9407ab1d84d33",
@@ -56,11 +56,11 @@
           "bytes": 2831
         },
         "unicom.txt": {
-          "sha256": "ee43f84b65fe9a8b721894cc848d0ee5acde4456a52d0d529d70f5508796e565",
-          "bytes": 27845
+          "sha256": "7c0c3cb312cf28aa121ef25b1205e2041ef6bfd8507a7cb3d29886588858cc2c",
+          "bytes": 27810
         },
         "unicom6.txt": {
-          "sha256": "bd37bc34597e0034e283e5fb3e6676fad1a38b62aad3df80992a6e0d24a258b0",
+          "sha256": "81eace96536f6c43587dd5d11503b63b89d78bfae81b37c3724559602be859f7",
           "bytes": 12526
         }
       }

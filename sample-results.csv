@@ -1,6 +1,6 @@
 ﻿ip,group,expected,actual,result,ip2region_region,operator_list
 117.51.160.34,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
-163.53.62.5,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
+202.97.55.37,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 202.97.80.216,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 103.231.69.59,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
 223.202.135.195,IPv4:CN:北京:chinanet,CN,CN,PASS,中国|北京市|北京市|电信|CN,chinanet
@@ -30,7 +30,7 @@
 219.158.107.178,IPv4:CN:北京:unicom,CN,CN,PASS,中国|北京市|北京市|联通|CN,unicom
 219.158.21.60,IPv4:CN:北京:unicom,CN,CN,PASS,中国|北京市|北京市|联通|CN,unicom
 202.97.34.179,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet
-160.83.110.95,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet
+202.97.55.39,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet
 202.97.34.178,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet
 218.30.222.166,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet
 202.97.82.20,IPv4:CN:上海:chinanet,CN,CN,PASS,中国|上海市|上海市|电信|CN,chinanet

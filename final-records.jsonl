@@ -2022,7 +2022,6 @@
 {"cidr": "103.116.76.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.116.92.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.116.120.0/22", "record": {"country": {"iso_code": "CN"}}}
-{"cidr": "103.116.128.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.116.138.0/23", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.116.184.0/22", "record": {"country": {"iso_code": "CN"}}}
 {"cidr": "103.116.220.0/22", "record": {"country": {"iso_code": "CN"}}}
